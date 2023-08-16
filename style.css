@@ -43,6 +43,60 @@ body {
     width: 25%;
 }
 
+#container > #invisible {
+    visibility: hidden;
+}
+
+#container > #sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#sidebar > .subtitle {
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sidebar > #clear {
+    width: 90%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#slider-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 90%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: white; /* Grey background */
+    outline: none; /* Remove outline */
+    border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    opacity: 0.5;
+  }
+
 #container > #grid {
     flex: 0 1 auto;
     height: 500px;
